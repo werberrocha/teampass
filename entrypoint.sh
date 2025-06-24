@@ -26,6 +26,8 @@ if [ -z "$(ls -A /etc/apache2/ssl)" ]; then
   chmod 750 /etc/apache2/ssl/* -R
 fi
 
+# Iniciando o cron
+service cron start
 
 
 # Inicia o Apache
